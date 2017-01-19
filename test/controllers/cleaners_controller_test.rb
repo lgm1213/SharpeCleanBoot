@@ -17,7 +17,7 @@ class CleanersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create cleaner" do
     assert_difference('Cleaner.count') do
-      post cleaners_url, params: { cleaner: { address: @cleaner.address, city: @cleaner.city, firstname: @cleaner.firstname, lastname: @cleaner.lastname, state: @cleaner.state, username: @cleaner.username, zipcode: @cleaner.zipcode } }
+      post cleaners_url, params: { cleaner: { address: @cleaner.address, city: @cleaner.city, email: @cleaner.email, firstname: @cleaner.firstname, lastname: @cleaner.lastname, phone: @cleaner.phone, state: @cleaner.state, username: @cleaner.username, zipcode: @cleaner.zipcode } }
     end
 
     assert_redirected_to cleaner_url(Cleaner.last)
@@ -34,7 +34,7 @@ class CleanersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update cleaner" do
-    patch cleaner_url(@cleaner), params: { cleaner: { address: @cleaner.address, city: @cleaner.city, firstname: @cleaner.firstname, lastname: @cleaner.lastname, state: @cleaner.state, username: @cleaner.username, zipcode: @cleaner.zipcode } }
+    patch cleaner_url(@cleaner), params: { cleaner: { address: @cleaner.address, city: @cleaner.city, email: @cleaner.email, firstname: @cleaner.firstname, lastname: @cleaner.lastname, phone: @cleaner.phone, state: @cleaner.state, username: @cleaner.username, zipcode: @cleaner.zipcode } }
     assert_redirected_to cleaner_url(@cleaner)
   end
 

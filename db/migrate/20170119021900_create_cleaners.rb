@@ -8,6 +8,8 @@ class CreateCleaners < ActiveRecord::Migration[5.0]
       t.string :city
       t.string :state
       t.string :zipcode
+      t.string :phone
+      t.string :email
 
       t.timestamps
     end

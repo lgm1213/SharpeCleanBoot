@@ -69,6 +69,6 @@ class CleanersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cleaner_params
-      params.require(:cleaner).permit(:username, :firstname, :lastname, :address, :city, :state, :zipcode)
+      params.require(:cleaner).permit(:username, :firstname, :lastname, :address, :city, :state, :zipcode, :phone, :email)
     end
 end

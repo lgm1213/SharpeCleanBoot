@@ -8,6 +8,8 @@ one:
   city: MyString
   state: MyString
   zipcode: MyString
+  phone: MyString
+  email: MyString
 
 two:
   username: MyString
@@ -17,3 +19,5 @@ two:
   city: MyString
   state: MyString
   zipcode: MyString
+  phone: MyString
+  email: MyString
