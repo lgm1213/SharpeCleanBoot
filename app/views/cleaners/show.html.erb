@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @cleaner.username %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @cleaner.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @cleaner.lastname %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @cleaner.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @cleaner.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @cleaner.state %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @cleaner.zipcode %>
+</p>
+
+<%= link_to 'Edit', edit_cleaner_path(@cleaner) %> |
+<%= link_to 'Back', cleaners_path %>
