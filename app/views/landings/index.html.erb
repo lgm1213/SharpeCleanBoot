@@ -1,25 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Landings</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= link_to 'Sign Up', new_user_registration_path %><br>
+<%= link_to 'Interested in working with us?', new_cleaner_path %>
 
-  <tbody>
-    <% @landings.each do |landing| %>
-      <tr>
-        <td><%= link_to 'Show', landing %></td>
-        <td><%= link_to 'Edit', edit_landing_path(landing) %></td>
-        <td><%= link_to 'Destroy', landing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
-
-<%= link_to 'New Landing', new_landing_path %>
